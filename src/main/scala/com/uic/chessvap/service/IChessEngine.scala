@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.{RequestBody, ResponseBody}
 
 trait IChessEngine {
 
-
   @throws[Exception]
   def newGame(newGameRequest: NewGameRequest): Response
 

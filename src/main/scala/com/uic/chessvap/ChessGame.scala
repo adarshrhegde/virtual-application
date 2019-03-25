@@ -85,16 +85,16 @@ object ChessGame {
 
   def quitGame(userSession : String) : Boolean = {
 
-    if(session.equals(userSession)){
+    if(session != null && session.equals(userSession)){
       p1 = null
       p2 = null
       game = null
       isGameInProgress = false
       session = null
-      true
-    } else
-      false
+      return true
 
+    } else
+      return false
 
   }
 
