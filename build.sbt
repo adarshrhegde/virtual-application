@@ -38,7 +38,7 @@ mainClass in (Compile) := Some("com.uic.chessvap.ChessVapApplication")
 
 packageName in Docker := "chessgame"
 
-version in Docker := "1.1.0"
+version in Docker := "1.2.0"
 
 // the Docker image to base on (alpine is smaller than the debian based one (120 vs 650 MB)
 dockerBaseImage := "anapsix/alpine-java"
