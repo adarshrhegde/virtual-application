@@ -1,17 +1,20 @@
-package com.uic.chessvap.service
+package com.uic.chessvap
 
 import pl.art.lach.mateusz.javaopenchess.core.ai.AIFactory
 import pl.art.lach.mateusz.javaopenchess.core.moves.MovesHistory
 import pl.art.lach.mateusz.javaopenchess.core.pieces.implementation.King
-import pl.art.lach.mateusz.javaopenchess.core.{Chessboard, Colors, Game, Square}
-import pl.art.lach.mateusz.javaopenchess.core.players.{Player, PlayerType}
 import pl.art.lach.mateusz.javaopenchess.core.players.implementation.{ComputerPlayer, HumanPlayer}
+import pl.art.lach.mateusz.javaopenchess.core.players.{Player, PlayerType}
+import pl.art.lach.mateusz.javaopenchess.core.{Chessboard, Colors, Game, Square}
 import pl.art.lach.mateusz.javaopenchess.utils.Settings
 
 class Main {
 
 }
 
+/**
+  * Test class used to test JavaChessOpen directly without services
+  */
 object Main extends App {
 
   val p1 : Player = new HumanPlayer("Adarsh", Colors.WHITE.getColorName)

@@ -1,5 +1,9 @@
 package com.uic.chessvap.service
 
+
+/**
+  * The Move type represents a move by a player
+  */
 class Move extends Response {
 
   var startSquare : String = _

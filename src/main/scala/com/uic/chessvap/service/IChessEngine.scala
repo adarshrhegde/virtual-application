@@ -2,7 +2,9 @@ package com.uic.chessvap.service
 
 import org.springframework.web.bind.annotation.{RequestBody, ResponseBody}
 
-
+/**
+  * The IChessEngine Interface
+  */
 trait IChessEngine {
 
   @throws[Exception]

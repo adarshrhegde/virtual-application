@@ -21,7 +21,9 @@ libraryDependencies ++= Seq(
   "org.scalactic" %% "scalactic" % scalaTestVersion,
   "com.github.pureconfig" %% "pureconfig" % pureConfigVersion,
   "org.springframework.boot" % "spring-boot-starter-web" % springVersion,
-  "org.springframework.boot" % "spring-boot-configuration-processor" % springVersion
+  "org.springframework.boot" % "spring-boot-starter-test" % springVersion,
+  "org.springframework.boot" % "spring-boot-configuration-processor" % springVersion,
+  "io.rest-assured" % "rest-assured" % "3.0.0" % "test"
 )
 
 /*
@@ -33,5 +35,17 @@ enablePlugins(JavaAppPackaging, AshScriptPlugin)
 
 // set the main entrypoint to the application that is used in startup scripts
 mainClass in (Compile) := Some("com.uic.chessvap.ChessVapApplication")
-//mainClass in (Compile, run) := Some("com.uic.chessvap.ChessVapApplication")
-//mainClass in (Compile, packageBin) := Some("com.uic.chessvap.ChessVapApplication")
+
+packageName in Docker := "chessgame"
+
+version in Docker := "1.1.0"
+
+// the Docker image to base on (alpine is smaller than the debian based one (120 vs 650 MB)
+dockerBaseImage := "anapsix/alpine-java"
+
+dockerRepository := Some("adarsh23")
+
+// creates tag 'latest' as well when publishing
+dockerUpdateLatest := true
+
+
