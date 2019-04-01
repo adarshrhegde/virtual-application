@@ -88,7 +88,9 @@ How to Run :
 2. Launch Amazon EC2 instance:
      
     a. Install docker
+    
     b. docker pull adarsh23/chessgame
+    
     c. docker run -p 8080:8080 adarsh23/chessgame
     
     The above command will execute the app 
