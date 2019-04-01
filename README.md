@@ -53,6 +53,13 @@ Instructions:
     Add jChess-1.5.jar within lib directory to classpath
 
 
+Packaging:
+
+
+    sbt universal:stage
+   
+   This will create a directory under target/universal with all the required dependencies. The directory will also include a shell script that starts the execution of the application. 
+
 How to Run :
 
 1. Generate Docker image: 
