@@ -1,0 +1,16 @@
+Hi Adarsh:
+You have done your homework weell and even though I assigned a grade, it is contingent upon your fixing the OSv part. In general, Your documentation missed many critical points and in general it is important to explain how classes and packages within your project are mapped to the framework concepts. Based on my assessment below you earn 4%.
+
+1. Explanations would help: ChessVapApplication is the main object and the class ChessEngine is the controller. The service bean is the class ChessGame. The class Main is just for testing the functionality - why not to make it a test? The names are confusing, since it takes an effort to determine which is which. I'd expect that the main program plays a full game.
+
+2. You use return in your Scala code and it is redundant.
+
+3. Use .gitignore.
+
+4. Don't need to use parentheses in getMessage in the class ChessResponse - it is a parameterless method.
+
+5.  You still use vars where vals could be enough.
+
+
+Thank you,
+Mark
