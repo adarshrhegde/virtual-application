@@ -77,13 +77,16 @@ How to Run :
 
     
     // The following generates a docker image locally
-    sbt docker:publishLocal
+    
+        sbt docker:publishLocal
     
     // The following publishes a docker image to the hub (Repository adarsh23)
-    sbt docker:publish
+        
+        sbt docker:publish
     
     // Creates a container when run within the project root directory
-    docker-compose up
+        
+        docker-compose up
     
 2. Launch Amazon EC2 instance:
      
@@ -99,10 +102,15 @@ How to Run :
 3. OSV with Capstan: (Not implemented successfully)
     
     Challenges faced with Capstan:
+    
     a. Running Capstan on Windows : Known issue not fixed in current build
+    
     b. Linux Subsystem for Windows : Issue with KVM
+    
     c. Amazon EC2 : Amazon uses its own package manager. Required dependencies were not available. Tried manually downloading each but failed due to version requirements.
+    
     d. Virtual Box : Issue with KVM. Later found out virtualization within Vbox is not supported as mentioned in some forums.
+    
 	e. Local Ubuntu : Local installation of Ubuntu couldn't connect to wifi . This is a known issue related to LAN drivers for my machine.
 
 
